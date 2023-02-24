@@ -9,5 +9,5 @@ plength = int(input("Enter password length\n"))
 opt_dict = {'n':num_only, 'l':letters_only,'m':mixed}
 
 password = opt_dict.get(ptype)(plength)
-password = "".join(i for i in password)
+password = "".join(str(i) for i in password)
 print(password)
